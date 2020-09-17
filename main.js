@@ -39,32 +39,30 @@
 //4. Попросити юзера ввести 8 чисел і скільки він ввів додатніх, відємних та нулів. Вивести статистику на екран. 
 //Також достатньо тільки 1 змінної для отримання даних від юзера.
 
-// let question = prompt ('Введіть 8 чисел, розділених пробілом').split(' ');
+let question = prompt ('Введіть 8 чисел, розділених пробілом').split(' ');
 
-// let minus = 0, equalZero = 0, plus = 0;
-// console.log(question);
+let minus = 0, equalZero = 0, plus = 0;
 
-// if (question.length == 8) {
-//         for (let i = 0; i < question.length; i++) {
-//             question[i] = +question[i];
-//             console.log(question, 'second');
-//             if (question.length <= 8)
-//                 if (question[i] < 0) {
-//                     minus += 1;
-//                 } else  if (question[i] == 0) {
-//                     equalZero += 1;
-//                 } else if (question[i] > 0 ) {
-//                     plus += 1;
-//                 } else {
+if (question.length == 8) {
+        for (let i = 0; i < question.length; i++) {
+            question[i] = +question[i];
+            if (question.length <= 8)
+                if (question[i] < 0) {
+                    minus += 1;
+                } else  if (question[i] == 0) {
+                    equalZero += 1;
+                } else if (question[i] > 0 ) {
+                    plus += 1;
+                } else {
         
-//                 }           
-//         }
-//     console.log(`Ви ввели ${minus} від'ємних чисел`);
-//     console.log(`Ви ввели ${plus} додатніх чисел`);
-//     console.log(`Ви ввели ${equalZero} нулів`);
-//     } else {
-//         alert('Некоректно введені дані');
-//     }
+                }           
+        }
+    console.log(`Ви ввели ${minus} від'ємних чисел`);
+    console.log(`Ви ввели ${plus} додатніх чисел`);
+    console.log(`Ви ввели ${equalZero} нулів`);
+    } else {
+        alert('Некоректно введені дані');
+    }
 
 //5. Надрукуйте табличку множення для числа  8 від 1 до 9. 8 х 1 = 8
 
@@ -122,3 +120,5 @@
 //     retry = confirm('Запустити калькулятор ще раз?');
 
 // } while (retry == true);
+
+
