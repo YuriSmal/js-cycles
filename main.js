@@ -18,12 +18,6 @@
 
 //3. Є масив [-1, 22, 3, 44, 5]. Виведіть максимальне значення.
 
-// let arr = [-1, 22, 3, 44, 5];
-
-// for (let i = 0; i < arr.length; i++) {
-//     console.log(Math.max(...arr));
-// }
-
 // let min = +Infinity;
 // let max = -Infinity;
 
