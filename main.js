@@ -96,35 +96,35 @@
 //7. Створити калькулятор який буде зациклений.
 // Запитати у юзера 2 числа та знак , провести математичну операцію, далі вивести результат і спитатись чи хоче юзер повторити?
 
-let num1, num2, sign, result, retry;
+// let num1, num2, sign, result, retry;
 
-do {
-    num1 = +prompt('Введіть перше число');
-    num2 = +prompt('Введіть друге число'); 
+// do {
+//     num1 = +prompt('Введіть перше число');
+//     num2 = +prompt('Введіть друге число'); 
 
-    if (num1 && num2 && isNaN(num1) == false && isNaN(num2) == false) {
-            sign = prompt('Введіть знак проведення математичної операцїї (+, -, * або /');
-        switch (sign) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                result = num1 / num2;
-                break;
-            default:
-                alert('Введіть коректний знак');
-        }
-        alert(`${num1} ${sign} ${num2} = ${result}.`);
-    } else {
-        alert('Введіть корректні дані');
-    }
+//     if (num1 && num2 && isNaN(num1) == false && isNaN(num2) == false) {
+//             sign = prompt('Введіть знак проведення математичної операцїї (+, -, * або /');
+//         switch (sign) {
+//             case '+':
+//                 result = num1 + num2;
+//                 break;
+//             case '-':
+//                 result = num1 - num2;
+//                 break;
+//             case '*':
+//                 result = num1 * num2;
+//                 break;
+//             case '/':
+//                 result = num1 / num2;
+//                 break;
+//             default:
+//                 alert('Введіть коректний знак');
+//         }
+//         alert(`${num1} ${sign} ${num2} = ${result}.`);
+//     } else {
+//         alert('Введіть корректні дані');
+//     }
 
-    retry = confirm('Запустити калькулятор ще раз?');
+//     retry = confirm('Запустити калькулятор ще раз?');
 
-} while (retry == true);
+// } while (retry == true);
